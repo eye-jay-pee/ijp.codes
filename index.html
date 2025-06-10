@@ -3,40 +3,45 @@
 <head>
     <title>ijp codes</title>
     <style>
-        body {
-            background-color: black; 
-      	    background: url('poop.gif') no-repeat center center;
-	        background-size: cover;
-	        min-height: 2000px;
-	        color: white;
+        html, body {
+              height: 100%;
+                margin: 0;
         }
-        h4 { color: white; }
+        body {
+            background-color: black;
+            color: white;
+        }
         ul {
             border-radius: 10px;
             border: 2px groove rgba(128, 128, 128, 0.5);
             background-color: rgba(128, 128, 128, 0.25);
-            color: black;
+            color: white;
             padding: 10px;
             margin: 50 auto;
-            display: inline-block; 
+            max-width: 700px;
         }
         li { 
             display: block; 
         }
+        p {
+            font-size: 1.5rem;
+            color: white;
+        }
         a {
+            font-size: 2.0rem;
+            color: white;
             border-radius: 5px;
             display:block;
-            padding: 10px 30px 10px 30px;
+            padding: 20px 30px 20px 30px;
             margin: 20px;
             background-color: blue;
-            color: white;
             text-decoration: none;
         }
         a:visited { background-color: indigo; }
         a:hover { background-color: darkBlue; }
         a:active { background-color: red; }
         .comment-block {
-            max-width: 500px; 
+            font-size: 1.5rem;
             width: 80%; 
             margin: 0 auto; 
             text-align: center;
@@ -46,56 +51,69 @@
             align-items: center; 
         }
         .comment-input {
+            font-size: 1.5rem;
             flex:3;
             margin-right: 10px;
         }
-        .comment-button { flex:1; }
-
-        @media (max-width: 1200px) {
-            body { font-size: 3em; }
-            ul { border-radius: 30px; }
-            a {
-                border-radius: 15px;
-                padding: 50px; 
-            }
+        .comment-button { 
+            flex:1; 
+            font-size: 1.5rem;
         }
+
     </style>
 </head>
 
 <body>
-<h1 align="center">Welcome to ijp.codes</h1>
-<p align="center">
-    My name is Isaac. <br>
-    This is my website. <br>
-    It's nearly empty for now, but <br>
-    I hope to showcase some projects here soon. <br>
-</p>
 
 <div align="center" >
+    <h1 align="center">Welcome to www.ijp.codes</h1>
+    <img style="max-height:200px; height:auto;" 
+         align="center" 
+         src="me.jpeg" 
+         alt="headshot">
+    <p align="center">
+        My name is Isaac. <br>
+        This is my website. <br>
+        It's nearly empty for now, but <br>
+        I'll show off some projects here soon. <br>
+        Or maybe I won't. Mind your own buisness. <br>
+    </p>
     <ul>
+        <li>
+    	    <a href="mailto:isaac@ijp.codes" 
+               target="_blank" 
+    	       rel="noopener noreferrer"
+               onclick="this.style.backgroundColor = 'indigo';"
+               value="isaac@ijp.codes">
+               isaac@ijp.codes
+            </a> 
+        </li>
         <li>
     	    <a href="https://www.github.com/eye-jay-pee" 
                target="_blank" 
-               rel="noopener noreferrer">eye-jay-pee on github</a>
+               rel="noopener noreferrer">github profile</a>
         </li>
         <li>
     	    <a href="https://www.youtube.com/@farmer-giles-huge-stones" 
                target="_blank" 
-    	       rel="noopener noreferrer">farmer-giles-huge-stones on youtube</a>
+    	       rel="noopener noreferrer">youtube channel</a>
         </li>
         <li>
     	    <a href="https://www.instagram.com/eye_jay_pee/" 
                target="_blank" 
-    	       rel="noopener noreferrer">eye-jay-pee on instagram</a> 
+    	       rel="noopener noreferrer">instagram page</a> 
         </li>
     </ul>
 </div>
 <div class="comment-block" >
     <h4>comments</h4>
     <div class="comment-entry">
-        <input type="text" class="comment-input" placeholder=
+        <input id="commentInput" type="text" class="comment-input" placeholder=
                 "write your comment here. It will not be saved or read."/>
-        <button class="comment-button">delete comment</button>
+        <button class="comment-button" 
+            onclick="document.getElementById('commentInput').value = ''">
+                delete comment
+        </button>
     </div>
 </div>
 
