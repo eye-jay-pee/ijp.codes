@@ -9,7 +9,6 @@
         }
         body {
             background-color: black;
-            color: white;
         }
         ul {
             border-radius: 10px;
@@ -27,7 +26,7 @@
             font-size: 1.5rem;
             color: white;
         }
-        a {
+        big-link {
             font-size: 2.0rem;
             color: white;
             border-radius: 5px;
@@ -37,36 +36,18 @@
             background-color: blue;
             text-decoration: none;
         }
-        a:visited { background-color: indigo; }
-        a:hover { background-color: darkBlue; }
-        a:active { background-color: red; }
-        .comment-block {
-            font-size: 1.5rem;
-            width: 80%; 
-            margin: 0 auto; 
-            text-align: center;
-        }
-        .comment-entry {
-            display: flex; 
-            align-items: center; 
-        }
-        .comment-input {
-            font-size: 1.5rem;
-            flex:3;
-            margin-right: 10px;
-        }
-        .comment-button { 
-            flex:1; 
-            font-size: 1.5rem;
-        }
-
+        big-link:visited { background-color: indigo; }
+        big-link:hover { background-color: darkBlue; }
+        big-link:active { background-color: red; }
     </style>
 </head>
 
 <body>
 
 <div align="center" >
-    <h1 align="center">Welcome to www.ijp.codes</h1>
+    <header style="margin: 2em 0; padding:0.5em; background-color:white;">
+        <h1 align="center">Welcome to www.ijp.codes</h1>
+    </header>
     <img style="max-height:200px; height:auto;" 
          align="center" 
          src="me.jpeg" 
@@ -80,44 +61,40 @@
     </p>
     <ul>
         <li>
-    	    <a href="mailto:isaac@ijp.codes" 
+    	    <big-link href="mailto:isaac@ijp.codes" 
                target="_blank" 
     	       rel="noopener noreferrer"
                onclick="this.style.backgroundColor = 'indigo';"
                value="isaac@ijp.codes">
                isaac@ijp.codes
-            </a> 
+            </big-link> 
         </li>
         <li>
-    	    <a href="https://www.github.com/eye-jay-pee" 
+    	    <big-link href="https://www.github.com/eye-jay-pee" 
                target="_blank" 
-               rel="noopener noreferrer">github profile</a>
+               rel="noopener noreferrer">github profile
+            </big-link> 
         </li>
         <li>
-    	    <a href="https://www.youtube.com/@farmer-giles-huge-stones" 
+    	    <big-link href="https://www.youtube.com/@farmer-giles-huge-stones" 
                target="_blank" 
-    	       rel="noopener noreferrer">youtube channel</a>
+    	       rel="noopener noreferrer">youtube channel
+            </big-link> 
         </li>
         <li>
-    	    <a href="https://www.instagram.com/eye_jay_pee/" 
+    	    <big-link href="https://www.instagram.com/eye_jay_pee/" 
                target="_blank" 
-    	       rel="noopener noreferrer">instagram page</a> 
+    	       rel="noopener noreferrer">instagram page
+            </big-link> 
         </li>
     </ul>
 </div>
-<div class="comment-block" >
-    <h4>comments</h4>
-    <div class="comment-entry">
-        <input id="commentInput" type="text" class="comment-input" placeholder=
-                "write your comment here. It will not be saved or read."/>
-        <button class="comment-button" 
-            onclick="document.getElementById('commentInput').value = ''">
-                delete comment
-        </button>
-    </div>
-</div>
 
-
+<footer style="text-align:center; background-color:white; padding:1em 0; font-size:0.9em; ">
+  <a href="https://github.com/eye-jay-pee/ijp.codes" target="_blank" rel="noopener">
+    View site source on GitHub
+  </a>
+</footer>
 </body>
 
 </html>
