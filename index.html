@@ -4,17 +4,24 @@
     <title>ijp codes</title>
     <style>
         html, body {
-              height: 100%;
-                margin: 0;
-        }
-        body {
+            height: 100%;
+            margin: 0;
             background-color: black;
+            background-image: url("me.jpeg");
+            background-size: cover;
+            background-position: center;
         }
+        header, footer {
+            background-color: darkGreen;
+            margin: 1pt 0; 
+            padding: 2pt; 
+            text-align: center;
+        }
+
         ul {
             border-radius: 10px;
             border: 2px groove rgba(128, 128, 128, 0.5);
             background-color: rgba(128, 128, 128, 0.25);
-            color: white;
             padding: 10px;
             margin: 50 auto;
             max-width: 700px;
@@ -24,9 +31,9 @@
         }
         p {
             font-size: 1.5rem;
-            color: white;
+            color: black;
         }
-        big-link {
+        a.big-link {
             font-size: 2.0rem;
             color: white;
             border-radius: 5px;
@@ -36,23 +43,19 @@
             background-color: blue;
             text-decoration: none;
         }
-        big-link:visited { background-color: indigo; }
-        big-link:hover { background-color: darkBlue; }
-        big-link:active { background-color: red; }
+        a.big-link:visited { background-color: indigo; }
+        a.big-link:hover { background-color: darkBlue; }
+        a.big-link:active { background-color: red; }
     </style>
 </head>
 
 <body>
 
 <div align="center" >
-    <header style="margin: 2em 0; padding:0.5em; background-color:white;">
+    <header>
         <h1 align="center">Welcome to www.ijp.codes</h1>
     </header>
-    <img style="max-height:200px; height:auto;" 
-         align="center" 
-         src="me.jpeg" 
-         alt="headshot">
-    <p align="center">
+    <p align="center"><br><br><br><br><br><br>
         My name is Isaac. <br>
         This is my website. <br>
         It's nearly empty for now, but <br>
@@ -61,37 +64,41 @@
     </p>
     <ul>
         <li>
-    	    <big-link href="mailto:isaac@ijp.codes" 
+    	    <a class=big-link href="mailto:isaac@ijp.codes" 
                target="_blank" 
     	       rel="noopener noreferrer"
                onclick="this.style.backgroundColor = 'indigo';"
                value="isaac@ijp.codes">
                isaac@ijp.codes
-            </big-link> 
+            </a> 
         </li>
         <li>
-    	    <big-link href="https://www.github.com/eye-jay-pee" 
+    	    <a class=big-link href="https://www.github.com/eye-jay-pee" 
                target="_blank" 
                rel="noopener noreferrer">github profile
-            </big-link> 
+            </a> 
         </li>
         <li>
-    	    <big-link href="https://www.youtube.com/@farmer-giles-huge-stones" 
+    	    <a class=big-link href="https://www.youtube.com/@farmer-giles-huge-stones" 
                target="_blank" 
     	       rel="noopener noreferrer">youtube channel
-            </big-link> 
+            </a> 
         </li>
         <li>
-    	    <big-link href="https://www.instagram.com/eye_jay_pee/" 
+    	    <a class=big-link href="https://www.instagram.com/eye_jay_pee/" 
                target="_blank" 
     	       rel="noopener noreferrer">instagram page
-            </big-link> 
+            </a> 
         </li>
     </ul>
+    
 </div>
 
-<footer style="text-align:center; background-color:white; padding:1em 0; font-size:0.9em; ">
-  <a href="https://github.com/eye-jay-pee/ijp.codes" target="_blank" rel="noopener">
+<footer>
+  <a href="https://github.com/eye-jay-pee/ijp.codes" 
+      target="_blank" 
+      rel="noopener"
+      style="background-color: green;">
     View site source on GitHub
   </a>
 </footer>
