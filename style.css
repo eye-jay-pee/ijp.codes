@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+}
+header, footer{
+    font-family: monospace;
+    background-color: darkGreen;
+}
+header h1{
+    margin: 0;
+    padding: 0.5em;
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+header nav a {
+    background-color: forestGreen;
+    padding: 10px 20px;
+    outline: 1px solid black;
+}
+header nav a:hover {
+    background-color: darkGreen;
+}
+p {
+    font-size: 1.5rem;
+    color: lightGreen;
+}
+
