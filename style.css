@@ -20,7 +20,7 @@ header nav {
 }
 header nav a {
     background-color: forestGreen;
-    padding: 10px 20px;
+    padding: 0px 20px;
     outline: 1px solid black;
 }
 header nav a:hover {
