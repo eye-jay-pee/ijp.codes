@@ -19,12 +19,22 @@ header nav {
     margin: 0;
 }
 header nav a {
+    text-decoration: none;
     background-color: forestGreen;
     padding: 0px 20px;
+    margin: 0px;
     outline: 1px solid black;
 }
 header nav a:hover {
     background-color: darkGreen;
+}
+header nav a div {
+    color: black;
+    font-size: 10px;
+    font-family: "Georgia", serif, ;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0 0 10px 0;
 }
 p {
     font-size: 1.5rem;
