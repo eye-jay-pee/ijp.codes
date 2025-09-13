@@ -31,12 +31,17 @@ header nav a:hover {
 header nav a div {
     color: black;
     font-size: 10px;
-    font-family: "Georgia", serif, ;
+    font-family: "Georgia", serif;
     text-decoration: none;
     padding: 0px;
     margin: 0 0 10px 0;
 }
+h2 {
+    font-size: 3rem;
+    color: forestGreen;
+}
 p {
     font-size: 1.5rem;
     color: lightGreen;
+    margin-top: 0;
 }
