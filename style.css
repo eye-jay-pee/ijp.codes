@@ -47,17 +47,20 @@ p {
     text-align: center;
     color: white;
 }
+.container img {
+    width:80%; height:auto;
+}
 .centered {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .centered h2 {
-    font-size: 5rem;
+    font-size: 9rem;
     color: gold;
 }
 .centered h3 {
-    font-size: 5rem;
-    color: brown;
+    font-size: 9rem;
+    color: darkred;
 }
