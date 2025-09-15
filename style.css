@@ -36,12 +36,28 @@ header nav a div {
     padding: 0px;
     margin: 0 0 10px 0;
 }
-h2 {
-    font-size: 3rem;
-    color: forestGreen;
-}
 p {
     font-size: 1.5rem;
     color: lightGreen;
     margin-top: 0;
+}
+.container {
+    margin: 30px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered h2 {
+    font-size: 5rem;
+    color: gold;
+}
+.centered h3 {
+    font-size: 5rem;
+    color: brown;
 }
