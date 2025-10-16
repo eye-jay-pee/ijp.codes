@@ -1,16 +1,17 @@
+<!DOCTYPE html>
 <html>
-      <head>
-    <meta charset="utf-8" />
-    <style>
-      html, body, canvas {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-      }
-    </style>
-  <link rel="modulepreload" href="./slope_staker-c5fb8accbfcefd60.js" crossorigin="anonymous" integrity="sha384-nvDjbGGCSMuNixG1tvpKCfpShbR8gDWYWwGq1Co182lN3ZGTJNEA0MWQ+cT8MeIa"><link rel="preload" href="./slope_staker-c5fb8accbfcefd60_bg.wasm" crossorigin="anonymous" integrity="sha384-PZH2RYq5oyb5YiGNhkbOV+Iyrtjgs6M2AOY06zNP4vMp4TcYfQeiizUmQoEvmO3x" as="fetch" type="application/wasm"></head>
+    <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    canvas {
+      display: block;
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+    }
+  </style>
+<link rel="modulepreload" href="./slope_staker-dc3de656877f0a0e.js" crossorigin="anonymous" integrity="sha384-ZpTiQ1bSXQR/ljTX2A27PDGO0uXOrPxKkOB1W3bzVHOpgRfU3JWyT98OCwiq2Ffh"><link rel="preload" href="./slope_staker-dc3de656877f0a0e_bg.wasm" crossorigin="anonymous" integrity="sha384-k8bCUw9lZ+jxuF2YUOIlwYAApKF+d9RQYB/CfC+S8HOTn5ivsWN5XGGeBLv9+lmd" as="fetch" type="application/wasm"></head>
   <body>
     <canvas id="the_canvas_id"></canvas>
     <script type="module">
@@ -19,8 +20,8 @@
     </script>
   
 <script type="module">
-import init, * as bindings from './slope_staker-c5fb8accbfcefd60.js';
-const wasm = await init({ module_or_path: './slope_staker-c5fb8accbfcefd60_bg.wasm' });
+import init, * as bindings from './slope_staker-dc3de656877f0a0e.js';
+const wasm = await init({ module_or_path: './slope_staker-dc3de656877f0a0e_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -29,4 +30,8 @@ window.wasmBindings = bindings;
 dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script></body>
+      <footer>
+      <a href="https://github.com/eye-jay-pee/slope_staker/tree/master/src" target="_blank">source</a>
+    </footer>
 </html>
+

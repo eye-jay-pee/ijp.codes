@@ -1,32 +1,56 @@
+<!DOCTYPE html>
 <html>
-      <head>
-    <meta charset="utf-8" />
-    <style>
-      html, body, canvas {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-      }
-    </style>
-  <link rel="modulepreload" href="/slope_staker-c5fb8accbfcefd60.js" crossorigin="anonymous" integrity="sha384-nvDjbGGCSMuNixG1tvpKCfpShbR8gDWYWwGq1Co182lN3ZGTJNEA0MWQ+cT8MeIa"><link rel="preload" href="/slope_staker-c5fb8accbfcefd60_bg.wasm" crossorigin="anonymous" integrity="sha384-PZH2RYq5oyb5YiGNhkbOV+Iyrtjgs6M2AOY06zNP4vMp4TcYfQeiizUmQoEvmO3x" as="fetch" type="application/wasm"></head>
-  <body>
-    <canvas id="the_canvas_id"></canvas>
-    <script type="module">
-      import init, { start_app } from "./pkg/slope_staker.js";
-      init().then(() => start_app("the_canvas_id"));
-    </script>
-  
-<script type="module">
-import init, * as bindings from '/slope_staker-c5fb8accbfcefd60.js';
-const wasm = await init({ module_or_path: '/slope_staker-c5fb8accbfcefd60_bg.wasm' });
+    <head>
+        <title>ijp.codes</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js?v=0.1.1"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>ijp.codes</h1>
+                <nav>
+                    <a href="mailto:isaac@ijp.codes">
+                        <img src="img/email.png" alt="email" width="42">
+                        <div> EMail </div>
+                    </a>
+                    <a href="https://www.github.com/eye-jay-pee">
+                        <img src="img/github.png" alt="github" width="42">
+                        <div > GitHub </div>
+                    </a>
+                    <a href="https://www.youtube.com/@farmer-giles-huge-stones">
+                        <img src="img/youtube.png" alt="youtube" width="42">
+                        <div > YouTube </div>
+                    </a>
+                    <a href="https://www.instagram.com/eye_jay_pee/"
+                       rel="noopener noreferrer"> 
+                        <img src="img/instagram.png" alt="instagram" width="42">
+                        <div> InstaGram </div>
+                    <a href="ss_demo.html"
+                       rel="noopener noreferrer"> 
+                        <img src="img/stake_icon.png" alt="SS" width="42">
+                        <div> SS demo </div>
+                    </a>
+                </nav>
+        </header>
 
-
-window.wasmBindings = bindings;
-
-
-dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
-
-</script></body>
+        <div class="container">
+            <img src="trees/stand.jpg" 
+                alt="white pine on crack" 
+                style="width:80%; height:auto;">
+            <div class="centered"> 
+                <h2>&forall;</h2> 
+            </div>
+            <p>Stand for everything;</p>
+        </div>
+        <div class="container">
+            <img src="trees/fall.jpg" 
+                alt="white pine on powder"
+                style="width:80%; height:auto;">
+            <div class="centered">
+                <h3>&not;&exist;</h3> 
+            </div>
+            <p>Fall for nothing;</p>
+        </div>
+    </body>
 </html>
