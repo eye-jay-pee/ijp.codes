@@ -1,0 +1,12 @@
+.*
+!.gitignore
+!.gitmodules
+
+etc/
+logs/
+access-logs
+lscache/
+mail/
+ssl/
+tmp/
+
