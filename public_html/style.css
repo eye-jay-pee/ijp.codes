@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+}
+header, footer{
+    font-family: monospace;
+    background-color: darkGreen;
+}
+header h1{
+    margin: 0;
+    padding: 0.5em;
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+header nav a {
+    text-decoration: none;
+    background-color: forestGreen;
+    padding: 0px 20px;
+    margin: 0px;
+    outline: 1px solid black;
+}
+header nav a:hover {
+    background-color: darkGreen;
+}
+header nav a div {
+    color: black;
+    font-size: 10px;
+    font-family: "Georgia", serif;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0 0 10px 0;
+}
+p {
+    font-size: 1.5rem;
+    color: lightGreen;
+    margin-top: 0;
+}
+.container {
+    margin: 30px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container img {
+    width:80%; height:auto;
+}
+.centered {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered h2 {
+    font-size: 9rem;
+    color: gold;
+}
+.centered h3 {
+    font-size: 9rem;
+    color: darkred;
+}
