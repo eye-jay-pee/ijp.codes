@@ -1,0 +1,3 @@
+[build]
+target = "slope_staker/index.html"
+dist = "public_html/dist"

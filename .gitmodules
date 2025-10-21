@@ -1,0 +1,3 @@
+[submodule "slope_staker"]
+	path = slope_staker
+	url = https://github.com/eye-jay-pee/slope_staker.git
