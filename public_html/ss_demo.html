@@ -5,12 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <style>
-      canvas {
-        display: block;
-        width: 500px;
-        height: 500px;
-        margin: 0 auto;
-      }
+
     </style>
   </head>
   <body>
@@ -23,7 +18,16 @@
           </a>
         </nav>
     </header>
-    <iframe src="./dist/index.html" loading="lazy"></iframe>
+    <iframe id="app" src="./dist/index.html" style="border:none;" loading="lazy"></iframe>
+
+    <script>
+    const iframe = document.getElementById('app');
+    iframe.onload = () => {
+      const doc = iframe.contentWindow.document;
+      iframe.style.width  = doc.documentElement.scrollWidth  + 'px';
+      iframe.style.height = doc.documentElement.scrollHeight + 'px';
+    };
+    </script>
     <footer>
         <a href="https://github.com/eye-jay-pee/slope_staker/tree/master/src" target="_blank">source</a>
     </footer>
