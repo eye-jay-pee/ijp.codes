@@ -5,27 +5,31 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <style>
-      canvas {
-        display: block;
-        width: 500px;
-        height: 500px;
-        margin: 0 auto;
+      iframe {
+        width: 485px;
+        height: 650px; 
+        border: none;
       }
     </style>
   </head>
   <body>
     <header>
       <h1>ijp.codes</h1>
-        <nav>
-          <a href="index.html">
-            <img src="img/tree.png" alt="/" width="42">
-            <div> Home </div>
-          </a>
-        </nav>
+      <nav>
+        <a href="index.html">
+          <img src="img/tree.png" alt="/" width="42">
+          <div> Home </div>
+        </a>
+      </nav>
     </header>
-    <iframe src="./dist/index.html" loading="lazy"></iframe>
+    <div class="container">
+      <iframe src="./dist/index.html" loading="lazy"
+              style="width:485px;height:650px"/>
+    </div>
     <footer>
-        <a href="https://github.com/eye-jay-pee/slope_staker/tree/master/src" target="_blank">source</a>
+      <a href="https://github.com/eye-jay-pee/slope_staker" 
+         target="_blank">source</a>
     </footer>
+  </body>
 </html>
 
