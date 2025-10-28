@@ -42,10 +42,13 @@ p {
     margin-top: 0;
 }
 .container {
-    margin: 30px;
+    margin: 20px;
     position: relative;
     text-align: center;
-    color: white;
+    display: inline-block;
+    width: 45%;
+    min-width:300px;
+    vertical-align: top;
 }
 .container img {
     width:80%; height:auto;
